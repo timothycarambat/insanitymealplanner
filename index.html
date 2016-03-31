@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insanity Meal Planner</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="css/Page1.css" rel="stylesheet" type="text/css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div id="Page1">
+<div id="Day">
+
+<ul id="weeklist" class="list-inline">
+    	<li id="Sun">Sunday</li>
+        <li id="Mon">Monday</li>
+        <li id="Tue">Tuesday</li>
+        <li id="Wed">Wednesday</li>
+        <li id="Thu">Thursday</li>
+        <li id="Fri">Friday</li>
+        <li id="Sat">Saturday</li>
+        <li id="ChevLeft" class="glyphicon glyphicon-chevron-left"></li>
+        <li id="ChevRight" class="glyphicon glyphicon-chevron-right"></li>
+        <li><button id="GetList" class="button " style="vertical-align:middle"><span>Save Day</span></button></li>
+        <li ><button id="PrintList" class="button " style="vertical-align:middle"><span>Get List</span></button></li>
+        </li>
+     </ul>
+    </span>
+</div>
+<div id="MealList" class="container-fluid col-lg-6">
+  <div id="Breakfast" class="row">
+  			<h1>Breakfast <span id="BreakfastGlyph" class="glyphicon glyphicon-chevron-down"></span></h1>
+            	<div id=BCont>
+                    <p id="BreakfastList"></p>
+                </div>
+  </div>
+  
+  <div id="Snack1" class="row">
+  			<h1>Snack<span id="Snack1Glyph" class="glyphicon glyphicon-chevron-down"></span></h1>
+            	<div id=S1Cont>
+            		<p id="Snack1List"></p>
+                </div>
+  </div>
+    
+  <div id="Lunch" class="row">
+  			<h1>Lunch<span id="LunchGlyph" class="glyphicon glyphicon-chevron-down"></span></h1>
+           		 <div id=LCont>
+            		<p id="LunchList"></p>
+                 </div>
+  </div>
+  <div id="Snack2" class="row">
+  			<h1>Snack<span id="Snack2Glyph" class="glyphicon glyphicon-chevron-down"></span></h1>
+            	<div id=S2Cont>
+            		<p id="Snack2List"></p>
+                </div>
+  </div>
+  <div id="Dinner" class="row">
+  			<h1>Dinner<span id="DinnerGlyph" class="glyphicon glyphicon-chevron-down"></span></h1>
+            	<div id=DCont>
+            		<p id="DinnerList"></p>
+                </div>
+  </div>
+  
+</div>
+</div>
+
+<!-- Right Panel--->
+
+<div id="OuterPrev">
+	<div id="PreviewPanel" class="container-fluid col-lg-6">
+				<div class='row' id="MealName"> <p><b>Meal Name</b></p>
+                </div>
+                
+                <div class='row' id="MealIngedients"> <p>Ingredients:</p>
+                </div>
+                
+                <div class='row' id="MealPrep"><p>Preperation</p>
+     </div>
+
+</div>
+</div>
+
+</div><!--End Page1-->
+
+
+<div id="HowToPanel" class="container-fluid col-lg-6">
+				<h3>How to Use This Planner:</h3>
+                <ul>
+                <li>Select the down arrows to show meals of each section. It is recommended by INSANITY&reg; to have one from each meal. Every Meal is included in this webtool</li>
+                <li>Hover over the <p class="glyphicon glyphicon-ok-sign"></p> for information about a specific meal.</li>
+                <li>Click over the <p class="glyphicon glyphicon-ok-sign"></p> to select a meal for that day. The meal will highlight green to show it has been selected.</li>
+                <li>Click "Save Day" and it will move to next day automatically. If you wish to skip a day of meals you may use the left and right arrows to navigate around days.</li>
+                <li>Refrain from going back on and rewriting days while making your list, if possible(will be fixed later).</li>
+                <li>Iterate through all days until finished on Saturday. After saving on Saturday or moving past it the button will change to "Get List". Clicking this will clear the page and allow you to screenshot or print page. Since planner operates offline a mailing option is not yet available.</li>
+                <br>
+                <li>This was done for useage with the INSANITY&reg; workout plan by BeachBody&reg;</li>
+                <li>INSANTIY Meal Planner Webtool and library&copy; was written by Timothy Carambat. Created and Implied Usage under MIT license. Webtool should not be monetized or commercialized without consent of creator. Contact @ rambat1010@gmail.com. Thank you for your support and Good Luck training!</li>
+                <br>
+                <li>Other Web Resources:</li>
+                <li><a href="https://www.beachbody.com/product/fitness_programs/insanity.do">Insanity Website</a></li>
+                <li><a href="http://www.teamunify.com/cast/__doc__/Insanity%20Nutrition%20Guide.pdf">Photo Scans of Insanity Nutruition Guide</a></li>
+                
+                </ul>
+     </div>
+
+
+
+
+
+
+</body>
+<!--JS SCRIPTS------------------------------------------------------------>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/Lib.js" type="text/javascript"></script>
+<script src="js/Worker.js" type="text/javascript"></script>
+<script src="js/DWMM.js" type="text/javascript"></script>
+<script src="js/ListMaker.js" type="text/javascript"></script>
+<script src="js/MealMatch.js" type="text/javascript"></script>
+<script src="js/Weeklist.js" type="text/javascript"></script>
+
+
+</html>

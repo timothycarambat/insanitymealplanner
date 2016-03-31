@@ -1,0 +1,170 @@
+body{
+	overflow-x:hidden;
+	background-image:url(../img/background.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	min-width:1440px;
+	max-width:9000px;
+}
+
+
+#Sun,#Mon,#Tue,#Wed,#Thu,#Fri,#Sat{
+	font-size:30px;
+}
+
+#ChevRight, #ChevLeft{
+	font-size:20px;
+}
+
+.text{
+	font-size:20px;
+	margin-left:10px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align:center;
+  padding: 10px;
+  width: 180px;
+  height:30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size:20px !important;
+  padding-bottom:5px;
+  padding-top:0px;
+  margin-right:-10px;
+  margin-top:-10px;
+  
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#ChevRight:hover,#ChevLeft:hover,#BreakfastGlyph:hover,#Snack1Glyph:hover,#LunchGlyph:hover,#Snack2Glyph:hover,#DinnerGlyph:hover{
+	cursor:pointer;
+}
+
+
+
+#Breakfast, #Snack1, #Lunch, #Snack2, #Dinner{
+	margin-left:10px;
+}
+
+#Breakfast > div,#Snack1 > div,#Lunch > div,#Snack2 > div,#Dinner > div{
+	margin-left:20px;
+}
+
+#BCont,#S1Cont,#LCont,#S2Cont,#DCont{
+	height:0px;
+	visibility:hidden;
+}
+span{
+	margin-left:5px;
+	font-size:30px;
+}
+div>p>p{
+	font-size:24px;
+}
+div>p>p *{
+	font-size:24px;
+	color: black;
+}
+
+/*Right Panel Css*/
+#PreviewPanel{
+	border:5px solid  #4db8ff;  
+	border-radius: 5px;
+	position: fixed;
+    top: 1em;
+    right: 1em;
+	font-weight:300;
+}
+#GetList{
+	position:relative;
+}
+
+
+
+/*Rotates Glyphs*/
+.rotate {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+.rotate2 {
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.active{
+	color: #0C6;
+}
+
+
+.printh1{
+	font-size:20px;
+ 	margin-top:10px;
+	margin-bottom:0px;
+}
+.printh1ing{
+	font-size:20px;
+ 	margin-top:10px;
+	margin-bottom:0px;
+	text-decoration:underline;
+}
+
+.printp{
+	margin-left:15px;
+	padding-bottom:5px;
+	margin-bottom:0px;
+}
+
+/*
+
+How To Panel CSS
+
+*/
+#HowToPanel{
+	border:5px solid  #4db8ff;  
+	border-radius: 5px;
+	position: fixed;
+    top: 1em;
+    right: 1em;
+	font-weight:300;
+	
+}
+
+
+
+
+
+
+
+
+
+
