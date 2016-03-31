@@ -119,8 +119,14 @@ $('#PreviewPanel').hide();
 //////////////////////////////////////////Hide How To Panel////////////
 $(document).ready(function(){
 	$("#HowToPanel").show();
+	$("#hints").hide();
 	$("#ChevLeft,#ChevRight,#BreakfastGlyph,#Snack1Glyph,#LunchGlyph,#Snack2Glyph,#DinnerGlyph").click(function(){
 		$("#HowToPanel").hide();
+		$("#hints").show();
+	});
+	$("#hints").click(function(){
+		$("#HowToPanel").toggle();
+		$(this).toggle();
 	});
 });
 

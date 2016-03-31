@@ -7,6 +7,20 @@ body{
 	max-width:9000px;
 }
 
+#hints{
+	position:fixed;
+	display:block;
+	float:right;
+	right:2%;
+	top: 3%;
+	color:#4db8ff;
+	font-size:60px;
+}
+#hints:hover{
+	cursor:pointer;
+	color:#3d93cc;
+}
+
 
 #Sun,#Mon,#Tue,#Wed,#Thu,#Fri,#Sat{
 	font-size:30px;
