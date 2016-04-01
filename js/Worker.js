@@ -118,6 +118,7 @@ $('#PreviewPanel').hide();
 
 //////////////////////////////////////////Hide How To Panel////////////
 $(document).ready(function(){
+	$('#PreviewPanel').hide();
 	$("#HowToPanel").show();
 	$("#hints").hide();
 	$("#ChevLeft,#ChevRight,#BreakfastGlyph,#Snack1Glyph,#LunchGlyph,#Snack2Glyph,#DinnerGlyph").click(function(){
@@ -130,10 +131,10 @@ $(document).ready(function(){
 	});
 	
 	if( /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase())) {
-    $("#hints").hide();
-	$("#HowToPanel").hide();
+    		$("#hints").hide();
+		$("#HowToPanel").hide();
 	alert('use desktop browser to view instructions.');
-}
+	}
 });
 
 
