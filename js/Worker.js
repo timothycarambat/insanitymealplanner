@@ -130,7 +130,9 @@ $(document).ready(function(){
 	});
 	
 	if(/iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent) ) {
-    	   $(document).click(function(){	
+		$("#Page1").hide();
+    	   $(document).click(function(){
+    	   	$("#Page1").show();
     		$("#HowToPanel").hide();
 		$("#hints").hide();
     	   	});
