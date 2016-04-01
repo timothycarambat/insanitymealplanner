@@ -133,9 +133,9 @@ $(document).ready(function(){
 		$(document).click(fucntion(){
 			$("#hints").hide();
 			$("#HowToPanel").hide();	
-		})
+		});
     	
-}
+	}
 });
 
 
