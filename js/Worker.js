@@ -120,7 +120,7 @@ $('#PreviewPanel').hide();
 $(document).ready(function(){
 	$("#HowToPanel").show();
 	$("#hints").hide();
-	$("#ChevLeft,#ChevRight,#BreakfastGlyph,#Snack1Glyph,#LunchGlyph,#Snack2Glyph,#DinnerGlyph").click(function(){
+	$("#ChevLeft,#ChevRight,#BreakfastGlyph,#Snack1Glyph,#LunchGlyph,#Snack2Glyph,#DinnerGlyph,#HowToPanel").click(function(){
 		$("#HowToPanel").hide();
 		$("#hints").show();
 	});
@@ -129,14 +129,11 @@ $(document).ready(function(){
 		$(this).toggle();
 	});
 	
-	if(/iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent) ) {
-		$("#Page1").hide();
-    	   $(document).click(function(){
-    	   	$("#Page1").show();
-    		$("#HowToPanel").hide();
-		$("#hints").hide();
-    	   	});
-	}
+//	if( /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase())) {
+//    $("#hints").hide();
+//	$("#HowToPanel").hide();
+//	alert('use desktop browser to view instructions.');
+//}
 });
 
 

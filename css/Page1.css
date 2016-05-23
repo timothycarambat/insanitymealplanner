@@ -7,6 +7,10 @@ body{
 	max-width:9000px;
 }
 
+#HowToPanel {
+    cursor: pointer;
+}
+
 #hints{
 	position:fixed;
 	display:block;
@@ -35,9 +39,8 @@ body{
 	margin-left:10px;
 }
 
-.button {
+#GetList, #PrintList {
   display: inline-block;
-  border-radius: 4px;
   background-color: #4CAF50;
   border: none;
   color: #FFFFFF;
@@ -49,7 +52,7 @@ body{
   cursor: pointer;
 }
 
-.button span {
+#GetList span, #PrintList span{
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -62,7 +65,7 @@ body{
   
 }
 
-.button span:after {
+#GetList span:after, #PrintList span:after {
   content: '»';
   position: absolute;
   opacity: 0;
@@ -71,11 +74,11 @@ body{
   transition: 0.5s;
 }
 
-.button:hover span {
+#GetList:hover span,#PrintList:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+#GetList:hover span:after , #PrintList:hover span:after {
   opacity: 1;
   right: 0;
 }
