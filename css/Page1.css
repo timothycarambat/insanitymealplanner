@@ -7,6 +7,10 @@ body{
 	max-width:9000px;
 }
 
+#HowToPanel {
+    cursor: pointer;
+}
+
 #hints{
 	position:fixed;
 	display:block;
